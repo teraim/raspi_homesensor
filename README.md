@@ -12,6 +12,7 @@
 $ aws config
 
 Please refer to the region name (e.g., ap-northeast-1) you use.
+
 https://docs.aws.amazon.com/general/latest/gr/rande.html
 
 ## Usage
