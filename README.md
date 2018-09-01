@@ -1,4 +1,4 @@
-# raspi homesensor
+# raspi homesensor (experimental)
 
 ## Preliminary
 
@@ -7,7 +7,7 @@
 - pip install retry
 - pip install boto3
 
-## Run
+## Usage
 
 To routinely work this program, you can add a following line to the cron table in your environment.
 
