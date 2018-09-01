@@ -8,7 +8,8 @@ from glob import glob
 bucket_name = "raspz"
 cam_name = "cam01"
 
-homedir = os.environ['HOME']
+#homedir = os.environ['HOME']
+homedir = "/home/pi/raspi_homesensor"
 print(homedir)
 
 def upload_images(s3):
