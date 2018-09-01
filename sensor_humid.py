@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import sys
 import time
+import datetime
 import smbus
 from time import sleep
 from retry import retry
@@ -28,8 +29,11 @@ def get_value():
     block = func3(i2c,address)
     humidity = (block[2] << 8 | block[3])/10.0
     temperature = (block[4] << 8 | block[5])/10.0
-    unix_time=int(time.time())
-    print("%d,%f" % (unix_time,humidity))
+    #unix_time=int(time.time())
+    #print("%d,%f" % (unix_time,humidity))
+    dt_now = datetime.datetime.now()
+    dt_str = dt_now.strftime("%Y/%m/%d %H:%M:%S")
+    print("%s,%f" % (dt_str,humidity))
 
 if __name__ == '__main__':
     get_value()

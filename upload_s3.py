@@ -35,7 +35,7 @@ def upload_sensor(s3):
         print("error: sensor dir does not exist.")
         exit()
 
-    fns = glob("%s/sensor/*.log" % home_dir)
+    fns = glob("%s/sensor/*.csv" % home_dir)
     print(fns)
 
     for fn in fns:
