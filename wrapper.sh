@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/bash -x
 ./cam.sh
-./room_env_humid.sh
-./room_env_temp.sh
+./wrapper_sensor_humid.sh
+./wrapper_sensor_temp.sh
 ./upload_s3.py

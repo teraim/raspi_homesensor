@@ -30,7 +30,7 @@ for fn in fns:
         #f.close()
         os.remove(fn)
 
-fns = glob("%s/room_env/*.log" % homedir)
+fns = glob("%s/sensor/*.log" % homedir)
 print(fns)
 
 for fn in fns:

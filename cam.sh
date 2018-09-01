@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 cam_name="raspcam01"
 dt=`date +'%y%m%d%H%M'`
 echo $dt
