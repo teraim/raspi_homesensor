@@ -9,15 +9,16 @@ bucket_name = "raspz"
 cam_name = "cam01"
 
 #homedir = os.environ['HOME']
-homedir = "/home/pi/raspi_homesensor"
-print(homedir)
+home_dir = "/home/pi"
+inst_dir = "%s/raspi_homesensor" % home_dir
+print(inst_dir)
 
 def upload_images(s3):
-    if not os.path.exists("%s/cam_images/" % homedir):
+    if not os.path.exists("%s/cam_images/" % home_dir):
         print("error: cam_images dir does not exist.")
         exit()
 
-    fns = glob("%s/cam_images/*.jpg" % homedir)
+    fns = glob("%s/cam_images/*.jpg" % home_dir)
     print(fns)
 
     for fn in fns:
@@ -30,11 +31,11 @@ def upload_images(s3):
             os.remove(fn)
 
 def upload_sensor(s3):
-    if not os.path.exists("%s/sensor/" % homedir):
+    if not os.path.exists("%s/sensor/" % home_dir):
         print("error: sensor dir does not exist.")
         exit()
 
-    fns = glob("%s/sensor/*.log" % homedir)
+    fns = glob("%s/sensor/*.log" % home_dir)
     print(fns)
 
     for fn in fns:

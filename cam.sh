@@ -1,9 +1,10 @@
 #!/bin/bash -x
-inst_dir=/home/pi/raspi_homesensor
+home_dir="/home/pi"
+inst_dir="${home_dir}/raspi_homesensor"
 cam_name="raspcam01"
 dt=`date +'%y%m%d%H%M'`
-mkdir -p ${isnt_dir}/cam_images
-fn="${isnt_dir}/cam_images/${cam_name}_${dt}.jpg"
+mkdir -p ${home_dir}/cam_images
+fn="${home_dir}/cam_images/${cam_name}_${dt}.jpg"
 echo ${fn}
 
 ##
