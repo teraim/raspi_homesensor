@@ -29,7 +29,7 @@ def get_value():
     humidity = (block[2] << 8 | block[3])/10.0
     temperature = (block[4] << 8 | block[5])/10.0
     unix_time=int(time.time())
-    print("temperature\t%f\t%d" % (temperature,unix_time))
+    print("%d,%f" % (unix_time,temperature))
 
 if __name__ == '__main__':
     get_value()

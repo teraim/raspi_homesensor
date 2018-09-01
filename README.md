@@ -3,6 +3,7 @@
 ## Preliminary
 
 - sudo apt-get install awscli
+- sudo apt-get install bc
 - pip install smbus
 - pip install retry
 - pip install boto3
