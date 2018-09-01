@@ -19,4 +19,6 @@ https://docs.aws.amazon.com/general/latest/gr/rande.html
 
 To routinely work this program, you can add a following line to the cron table in your environment.
 
+# sudo crontab -e
+
 */10 * * * * /home/pi/raspi_homesensor/wrapper.sh
