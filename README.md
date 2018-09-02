@@ -12,24 +12,29 @@
 
 ### Quick Install (Raspberry Pi 3+)
 
+~~~
 $ sudo apt autoremove libopencv3 //if necessary
 
 $ wget https://github.com/mt08xx/files/raw/master/opencv-rpi/libopencv3_3.4.2-20180709.1_armhf.deb
 $ sudo apt install -y ./libopencv3_3.4.2-20180709.1_armhf.deb
 $ sudo ldconfig
+~~~
 
 ### Source Compiling Install (Raspberry Pi Zero)
 
+~~~
 $ sudo apt-get install build-essential cmake pkg-config
 $ sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
 $ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 $ sudo apt-get install libxvidcore-dev libx264-dev
 $ sudo apt-get install libatlas-base-dev gfortran
+~~~
 
 Dowload an achived package from the following site.
 
 https://github.com/opencv/opencv/releases
 
+~~~
 $ tar xzf 3.4.3.tar.gz
 $ cd opencv-3.4.3
 $ mkdir build
@@ -38,6 +43,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/opt/opencv-3.4.3 -D
 $ make
 $ sudo make install
 $ ldconfig
+~~~
 
 ## AWS Preliminary
 
