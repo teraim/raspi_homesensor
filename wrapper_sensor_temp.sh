@@ -2,9 +2,11 @@
 home_dir=/home/pi
 cam_name="raspcam01"
 mkdir -p ${home_dir}/sensor
+dt=`date +'%y%m%d'`
+fn=${cam_name}_sensor_temp_${dt}.csv
 
-if [ ! -e ${home_dir}/sensor/${cam_name}_sensor_temp.csv ]; then
-  echo "datetime,temp" > ${home_dir}/sensor/${cam_name}_sensor_temp.csv
+if [ ! -e ${home_dir}/sensor/${fn} ]; then
+  echo "datetime,temp" > ${home_dir}/sensor/${fn}
 fi
 
-${home_dir}/raspi_homesensor/sensor_temp.py >> ${home_dir}/sensor/${cam_name}_sensor_temp.csv
+${home_dir}/raspi_homesensor/sensor_temp.py >> ${home_dir}/sensor/${fn}
