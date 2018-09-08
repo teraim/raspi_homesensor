@@ -8,8 +8,11 @@
 - sudo apt-get install python-numpy python-smbus i2c-tools
 
 Before installation python modules, you should upgrade pip itself.
+
+~~~
 $ sudo pip install --upgrade pip
 $ sudo pip3 install --upgrade pip
+~~~
 
 - sudo pip install scipy
 - sudo pip install retry
