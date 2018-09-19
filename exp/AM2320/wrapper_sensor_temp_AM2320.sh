@@ -9,4 +9,4 @@ if [ ! -e ${home_dir}/sensor/${fn} ]; then
   echo "datetime,temp" > ${home_dir}/sensor/${fn}
 fi
 
-${home_dir}/raspi_homesensor/sensor_temp.py >> ${home_dir}/sensor/${fn}
+${home_dir}/raspi_homesensor/sensor_temp_AM2320.py >> ${home_dir}/sensor/${fn}

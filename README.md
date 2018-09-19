@@ -3,14 +3,13 @@
 ## Preliminary
 
 - sudo apt-get install awscli bc git
-- sudo apt-get install python python-pip
 - sudo apt-get install python3 python3-pip
 - sudo apt-get install python-numpy python-smbus i2c-tools
+- sudo apt-get install pigpio
 
 Before installation python modules, you should upgrade pip itself.
 
 ~~~
-$ sudo pip install --upgrade pip
 $ sudo pip3 install --upgrade pip
 ~~~
 
